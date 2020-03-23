@@ -1,3 +1,8 @@
-1) My algorithm first finds all possible rotations for the list of blocks. After sorting the rotated list, we can apply our recursive solution. We find the tallest possible height by first looking at the biggest height and add it to our current value. Then we look at the next block and so on. By doing this on every block, we can find the maximum possible height that can occur from the list of blocks. I expect the running time to be O(n^2) since we are comparing each element to all the other elements. In my DP part of the code, we see that it goes through the list of rotations twice, hence the O(n^2) running time.
+1) My algorithm first finds all possible rotations for the list of blocks. After sorting the rotated list, 
+we can apply our recursive solution. We find the tallest possible height by first looking at the biggest height 
+and add it to our current value. Then we look at the next block and so on. By doing this on every block, we can 
+find the maximum possible height that can occur from the list of blocks. I expect the running time to be O(n^2) 
+since we are comparing each element to all the other elements. In my DP part of the code, we see that it goes 
+through the list of rotations twice, hence the O(n^2) running time.
 
 2)Hey

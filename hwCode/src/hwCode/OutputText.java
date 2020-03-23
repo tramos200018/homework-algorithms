@@ -5,8 +5,6 @@ import java.util.Collections;
 
 public class OutputText {
 
-	
-	
 	ArrayList<BlockRep> rotations = new ArrayList<BlockRep>(); // list of rotations for each block
 	ArrayList<BlockRep> tower = new ArrayList<BlockRep>(); // tower of blocks for output
 
@@ -39,13 +37,11 @@ public class OutputText {
 		// array for different tower sizes
 		int[] heights = new int[rotSize];
 
-		//add all heights of blocks
+		// add all heights of blocks
 		for (int i = 0; i < rotSize; i++)
 			heights[i] = rotations.get(i).height;
 
-		
-		
-		//pointers
+		// pointers
 		BlockRep towerB = null;
 		BlockRep remove = null;
 		BlockRep block = null;
@@ -66,7 +62,6 @@ public class OutputText {
 					towerB = block;
 					remove = prevBlock;
 				}
-				
 
 			}
 			// add potential height to array
@@ -81,8 +76,7 @@ public class OutputText {
 			ans = Math.max(ans, heights[i]);
 		}
 
-		
-		//output text
+		// output text
 		System.out.println("The tallest tower has " + tower.size() + " blocks and a height of " + ans);
 		System.out.println();
 		System.out.println(tower.size());

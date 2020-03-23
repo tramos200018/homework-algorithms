@@ -13,12 +13,9 @@ import java.util.Scanner;
 public class Block {
 
 	public static void main(String[] args) {
-		
-		Integer numOfBlocks = 0; //holder for number of blocks
+
+		Integer numOfBlocks = 0; // holder for number of blocks
 		ArrayList<BlockRep> blocks = new ArrayList<BlockRep>(); // list of blocks
-		
-		
-		
 
 		// ask for file name
 		Scanner scanner = new Scanner(System.in);
@@ -42,7 +39,7 @@ public class Block {
 		}
 
 		OutputText ans = new OutputText();
-		//print out tallest tower
+		// print out tallest tower
 		ans.outputText(blocks);
 	}
 

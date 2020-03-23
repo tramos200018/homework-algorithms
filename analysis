@@ -5,4 +5,17 @@ find the maximum possible height that can occur from the list of blocks. I expec
 since we are comparing each element to all the other elements. In my DP part of the code, we see that it goes 
 through the list of rotations twice, hence the O(n^2) running time.
 
-2)Hey
+2)When I first started on this project, I knew that the rotations of the blocks had to be taken into account.
+At first, I believed that the block had 6 total rotations since it had 6 different sides. However, after taking
+into account the base area, I decided that the block only actually had 3 rotations since the opposite faces of the
+block's sides are the same. This is true since the base area of the 3 rotaions are all different if the dimensions are
+all distinct as opposed to the 6 rotations which will have duplicate base areas.
+
+3) My code implements my algorithm in the OutputText file using  three different arraylists. The "blocks" list that is
+passed as a parameter in the class' method represents the original list of blocks. The "rotations" list contains all
+possible rotations of each block. And the "tower" list represents the final solution. The DP loops checks to see if the
+length and width of the previous block is greater than that of the current block. If it is, it recursiveley adds it to an
+array of possible heights of the towers while making sure it keeps track of the blocks that are added to the tower. By
+doing this, we have a bottom-up procedure for finding the maximum possible height of the tower.
+
+4)

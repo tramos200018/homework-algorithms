@@ -18,4 +18,6 @@ length and width of the previous block is greater than that of the current block
 array of possible heights of the towers while making sure it keeps track of the blocks that are added to the tower. By
 doing this, we have a bottom-up procedure for finding the maximum possible height of the tower.
 
-4)
+4)I tested my code using the provided test files on piazza. Although it correctly determines the largest possible height
+of the tower for each test case, it doesn't correcly print out the actual tower and the total number of blocks for the
+tower is also slightly inacurate.
